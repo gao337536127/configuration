@@ -22,7 +22,6 @@ func AppendConfigFile(path string) {
 }
 
 type IniConfig struct {
-	ReadConfig
 	once sync.Once
 	cfg  *ini.File
 }
